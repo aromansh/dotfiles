@@ -1,0 +1,4 @@
+# Sidebar
+bind index,pager <F7> sidebar-prev
+bind index,pager <F9> sidebar-next
+bind index,pager <F8> sidebar-open

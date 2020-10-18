@@ -1,0 +1,8 @@
+# Include sidebar config
+source mail
+source index
+source sidebar
+source mappings
+source hooks
+source gruvbox.muttrc
+

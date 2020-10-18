@@ -1,0 +1,35 @@
+[general]
+ui = ttyui
+accounts = personal
+socktimeout = 0
+ssl = yes
+starttls = yes
+
+[mbnames]
+enabled = yes
+filename = ~/.neomutt/mailboxes
+header = "mailboxes "
+# peritem = "+%(accountname)s/%(foldername)s"
+peritem = "+%(foldername)s"
+sep = " "
+footer = "\n"
+
+[Account personal]
+localrepository = personal-local
+remoterepository = personal-remote
+maxage = 5
+
+[Repository personal-local]
+type = Maildir
+localfolders = ~/Mail/personal
+
+[Repository personal-remote]
+type = IMAP
+remotehost = imap.fastmail.com
+remoteport = 993
+remoteuser = alejandro@aroman.sh
+remotepassfile = ~/.creds/personal.pass
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+folderfilter = lambda folder: folder not in ['Archive', 'Drafts']
+maxconnections = 1
+expunge = no

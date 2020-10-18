@@ -1,0 +1,20 @@
+
+set from = "alejandro@aroman.sh"
+set realname = "Alejandro Román"
+
+set folder = "~/Mail/personal"
+source ~/.neomutt/mailboxes
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set record = "+Sent"
+set trash = "+Trash"
+
+
+set mail_check_stats
+
+set editor = nvim
+set sendmail = "/usr/local/bin/msmtp"
+set mbox_type = Maildir
+
+set sort = threads
+set sort_aux = reverse-last-date-received
