@@ -30,6 +30,6 @@ remoteport = 993
 remoteuser = alejandro@aroman.sh
 remotepassfile = ~/.creds/personal.pass
 sslcacertfile = /usr/local/etc/openssl/cert.pem
-folderfilter = lambda folder: folder not in ['Archive', 'Drafts']
+folderfilter = lambda folder: folder not in ['Archive']
 maxconnections = 1
 expunge = no
