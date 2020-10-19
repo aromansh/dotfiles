@@ -98,7 +98,11 @@ export LC_ALL=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
+alias v=nvim
 alias mutt=neomutt
+alias m=neomutt
+alias o=offlineimap
+
 
 # Set title (custom)
 echo -en "\033];Terminal\007"
