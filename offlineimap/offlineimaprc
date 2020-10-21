@@ -8,9 +8,10 @@ starttls = yes
 [mbnames]
 enabled = yes
 filename = ~/.neomutt/mailboxes
-header = "mailboxes "
+header = "named-mailboxes "
 # peritem = "+%(accountname)s/%(foldername)s"
-peritem = "+%(foldername)s"
+#peritem = "+%(foldername)s"
+peritem = %(foldername)s +%(foldername)s
 sep = " "
 footer = "\n"
 
