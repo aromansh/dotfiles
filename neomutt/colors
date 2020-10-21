@@ -12,3 +12,28 @@ color tree color109 black
 # Sidebar
 color sidebar_highlight white color239
 color sidebar_divider color246 black
+color sidebar_new color167 black # red
+
+# Pager
+color attachment color246 black # gray
+color header color246 black ".*" # gray
+color header color214 black "^(Date)" # yellow
+color header color167 black "^(From)" # red
+color header color142 black "^(To|CC|BCC)" # green
+color header color109 black "^(Subject)" # blue
+
+color quoted color132 black # dark purple
+color quoted1 color72 black # dark green
+color quoted2 color172 black # dark yellow
+color quoted3 color124 black # dark red
+color quoted4 color66 black # dark blue
+color quoted5 color72 black # dark aqua
+color quoted6 color246 black # dark gray
+
+color body color167 black "[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+" # red - emails
+color body color66 black "(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+" # blue - URLs
+color body color208 color235 "\`[^\`]*\`" # orange black - code between ` and `
+color body color132 black "^# \.*" # dark purple- heading
+color body color72 black "^## \.*" # dark green - sub heading
+color body color172 black "^### \.*" # dark yellow - sub sub heading
+color body color124 black "^#### \.* " # dark red - sub sub sub heading

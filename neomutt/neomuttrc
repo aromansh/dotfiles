@@ -1,6 +1,7 @@
 # Include sidebar config
 source mail
 source index
+source pager
 source sidebar
 source mappings
 source hooks

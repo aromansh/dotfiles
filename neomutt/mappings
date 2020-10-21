@@ -1,4 +1,42 @@
+# General
+unbind index,pager h # Do not toggle headers
+unbind index,pager l # Do not limit messages
+unbind index,pager <up>
+unbind index,pager <down>
+unbind index,pager <left>
+unbind index,pager <right>
+unbind index,pager j
+unbind index,pager J
+unbind index,pager k
+unbind index,pager K
+unbind index,pager l
+unbind index,pager L
+unbind index,pager h
+unbind index,pager H
+unbind index,pager \Cj
+unbind index,pager \CJ
+unbind index,pager \Ck
+unbind index,pager \CK
+unbind index,pager \Cl
+unbind index,pager \CL
+unbind index,pager \Ch
+unbind index,pager \CH
+
+bind index,pager \Ch display-toggle-weed # Toggle headers
+bind index,pager J next-page
+bind index,pager K previous-page
+
+# Index
+bind index j next-entry
+bind index k previous-entry
+
 # Sidebar
-bind index,pager <F7> sidebar-prev
-bind index,pager <F9> sidebar-next
-bind index,pager <F8> sidebar-open
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \Cn sidebar-open
+
+# Pager
+bind pager j next-line
+bind pager k previous-line
+bind pager l next-entry
+bind pager h previous-entry

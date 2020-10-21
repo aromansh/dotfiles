@@ -1,0 +1,6 @@
+# Format
+set pager_format = "%-30.30n - %s%*  - %C/%m - (%P)"
+
+# Ignore headers
+ignore *
+unignore from date subject to cc bcc fcc
