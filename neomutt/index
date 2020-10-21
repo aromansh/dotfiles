@@ -1,1 +1,7 @@
+# Formats
 set index_format = "%Z %{%b %d} %-30.30L %s"
+set status_format = "---%D-%>--(%P)---"
+
+# How to display messages in the index
+set sort = "threads"
+set sort_aux = reverse-last-date-received
