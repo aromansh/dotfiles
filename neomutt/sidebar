@@ -52,22 +52,22 @@ set sidebar_sort_method = 'path'
 # FUNCTIONS – shown with an example mapping
 # --------------------------------------------------------------------------
 # Move the highlight to the previous mailbox
-bind index,pager \Cp sidebar-prev
+#bind index,pager \Cp sidebar-prev
 # Move the highlight to the next mailbox
-bind index,pager \Cn sidebar-next
+#bind index,pager \Cn sidebar-next
 # Open the highlighted mailbox
-bind index,pager \Co sidebar-open
+#bind index,pager \Co sidebar-open
 # Move the highlight to the previous page
 # This is useful if you have a LOT of mailboxes.
-bind index,pager <F3> sidebar-page-up
+#bind index,pager <F3> sidebar-page-up
 # Move the highlight to the next page
 # This is useful if you have a LOT of mailboxes.
-bind index,pager <F4> sidebar-page-down
+#bind index,pager <F4> sidebar-page-down
 # Move the highlight to the previous mailbox containing new, or flagged,
 # mail.
-bind index,pager <F5> sidebar-prev-new
+#bind index,pager <F5> sidebar-prev-new
 # Move the highlight to the next mailbox containing new, or flagged, mail.
-bind index,pager <F6> sidebar-next-new
+#bind index,pager <F6> sidebar-next-new
 # Toggle the visibility of the Sidebar.
 bind index,pager B sidebar-toggle-visible
 # --------------------------------------------------------------------------
@@ -88,16 +88,3 @@ bind index,pager B sidebar-toggle-visible
 #color sidebar_new green black
 # Color to give mailboxes containing no new/flagged mail, etc.
 #color sidebar_ordinary color245 default
-# --------------------------------------------------------------------------
-#
-# ----------------------
-# Mailboxes
-# -------------------
-#set sidebar_short_path
-#set sidebar_delim_chars="."
-#set sidebar_folder_indent
-#set sidebar_indent_string="  "
-#set sidebar_width=30#
-#
-set sort = "threads"
-set sort_aux = reverse-last-date-received
