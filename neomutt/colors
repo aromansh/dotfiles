@@ -1,0 +1,14 @@
+# General
+color normal white black
+color status color246 color237
+color indicator color223 color241
+
+# Index
+color index color214 black ".*"
+color index_author color167 black ".*"
+color index_subject color109 black ".*"
+color tree color109 black
+
+# Sidebar
+color sidebar_highlight white color239
+color sidebar_divider color246 black
