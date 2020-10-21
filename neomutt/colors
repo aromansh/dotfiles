@@ -37,3 +37,5 @@ color body color132 black "^# \.*" # dark purple- heading
 color body color72 black "^## \.*" # dark green - sub heading
 color body color172 black "^### \.*" # dark yellow - sub sub heading
 color body color124 black "^#### \.* " # dark red - sub sub sub heading
+
+color signature color246 black # gray
