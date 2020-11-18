@@ -126,3 +126,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export TERM=xterm-256color
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:/opt/apache-maven-3.6.3/bin
