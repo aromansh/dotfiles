@@ -19,6 +19,9 @@ Plug 'vim-scripts/ide'
 " Colorscheme
 Plug 'https://github.com/arzg/vim-wizard'
 
+" NerdTree
+Plug 'scrooloose/nerdtree'
+
 " Initialize plugin system
 call plug#end()
 
@@ -35,3 +38,6 @@ set number
 set shiftwidth=4
 set tabstop=4
 au BufRead,BufNewFile *.md set textwidth=80
+
+" Specific mappings
+map <C-b> :NERDTreeFocus<CR>
