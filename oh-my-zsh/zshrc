@@ -99,10 +99,10 @@ export LC_ALL=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
-alias mutt=neomutt
-alias m=neomutt
-alias o=offlineimap
-alias om="o&&m"
+#alias mutt=neomutt
+#alias m=neomutt
+#alias o=offlineimap
+#alias om="o&&m"
 
 alias ga="git add"
 alias gaa="git add ."
