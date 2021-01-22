@@ -39,6 +39,8 @@ set shiftwidth=4
 set tabstop=4
 au BufRead,BufNewFile *.md set textwidth=80
 
-" Specific mappings
+" NERDTree Specific mappings
 let g:NERDTreeMapToggleBookmarks= ''
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
 map B :NERDTreeFocus<CR>
