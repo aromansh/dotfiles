@@ -106,14 +106,17 @@ alias v=nvim
 
 alias ga="git add"
 alias gaa="git add ."
+alias gap="git add -p"
 alias gs="git status"
 alias gl="git lg"
 alias gc="git commit"
 alias gcv="git commit -v"
 alias gcm="git commit -m"
+alias gca="git commit --amend"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gp="git push"
+
 
 # Set title (custom)
 echo -en "\033];Terminal\007"
