@@ -1,0 +1,16 @@
+# Do not ignore files in .gitignore
+--no-ignore
+
+# Includee hidden files
+--hidden
+
+# Manully ignore
+--glob=!**/package-lock.json
+--glob=!**/yarn.lock
+--glob=!**/.DS_Store
+--glob=!**/node_modules/**
+--glob=!**/*.jwk
+--glob=!**/dist/**
+--glob=!.build/**
+--glob=!.serverless/**
+--glob=!.vscode/**

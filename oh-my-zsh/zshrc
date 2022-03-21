@@ -131,3 +131,9 @@ export TERM=xterm-256color
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/opt/apache-maven-3.6.3/bin
+
+# Vim FZF
+export FZF_DEFAULT_OPTS='--reverse'
+
+# Vim rg
+export RIPGREP_CONFIG_PATH=$HOME/.dotfiles/ripgrep/ripgreprc
