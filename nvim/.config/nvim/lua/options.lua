@@ -7,6 +7,8 @@ set.tabstop = 4
 set.expandtab = true
 set.encoding = 'UTF-8'
 set.termguicolors = true
+set.binary = true
+set.eol = false
 
 vim.cmd 'au BufRead,BufNewFile *.md set textwidth=80'
 vim.cmd 'filetype plugin on'
