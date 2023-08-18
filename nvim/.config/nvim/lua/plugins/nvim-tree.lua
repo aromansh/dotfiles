@@ -25,10 +25,21 @@ require("nvim-tree").setup({
   },
   renderer = {
     group_empty = true,
+    icons = {
+        padding = "  ",
+        show = {
+            folder_arrow = false,
+            git = false
+        }
+    },
+    highlight_git = true
   },
   filters = {
-    dotfiles = false,
+    dotfiles = false
   },
+  git = {
+      ignore = false
+  }
 })
 
 -- Mappings

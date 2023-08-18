@@ -5,7 +5,7 @@ Plug 'vim-airline/vim-airline' -- Status bar
 Plug 'vim-airline/vim-airline-themes'
 -- Plug 'scrooloose/nerdtree'
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'nvim-tree/nvim-tree.lua'
+Plug ('nvim-tree/nvim-tree.lua', { commit = '9c97e6449b0b0269bd44e1fd4857184dfa57bb4c' })
 Plug ('junegunn/fzf', { ['do'] = function()
 		vim.fn['fzf#install']()
 	end 
