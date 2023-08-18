@@ -24,15 +24,17 @@ require("nvim-tree").setup({
     },
   },
   renderer = {
+    root_folder_label = ":t",
     group_empty = true,
     icons = {
-        padding = "  ",
         show = {
             folder_arrow = false,
             git = false
         }
     },
-    highlight_git = true
+    special_files = {},
+    highlight_git = true,
+    highlight_opened_files = "name"
   },
   filters = {
     dotfiles = false
