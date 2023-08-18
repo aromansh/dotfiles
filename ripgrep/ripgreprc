@@ -4,11 +4,13 @@
 # Includee hidden files
 --hidden
 
+--smart-case
+
 # Manully ignore
 --glob=!**/package-lock.json
 --glob=!**/yarn.lock
 --glob=!**/.DS_Store
---glob=!**/node_modules/**
+--glob=!node_modules/**
 --glob=!**/*.jwk
 --glob=!**/dist/**
 --glob=!.build/**
