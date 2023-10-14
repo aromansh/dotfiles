@@ -33,8 +33,7 @@ require("nvim-tree").setup({
         }
     },
     special_files = {},
-    highlight_git = true,
-    highlight_opened_files = "name"
+    highlight_git = true
   },
   filters = {
     dotfiles = false
