@@ -34,3 +34,7 @@ set -gx FZF_DEFAULT_OPTS '--reverse'
 
 # Vim rg
 set -gx RIPGREP_CONFIG_PATH "$HOME/.dotfiles/ripgrep/ripgreprc"
+
+# fnm - Macbook pro
+set PATH "/Users/alejandro/Library/Application Support/fnm" $PATH
+fnm env | source
