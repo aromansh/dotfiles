@@ -38,3 +38,8 @@ set -gx RIPGREP_CONFIG_PATH "$HOME/.dotfiles/ripgrep/ripgreprc"
 # fnm - Macbook pro
 set PATH "/Users/alejandro/Library/Application Support/fnm" $PATH
 fnm env | source
+
+# Haystack (commenting as instructed in https://webostv.developer.lge.com/develop/tools/removal-of-old-webos-tv-sdk)
+#set LG_WEBOS_TV_SDK_HOME "/Users/alejandro/.bin/webos-cli"
+#set WEBOS_CLI_TV "$LG_WEBOS_TV_SDK_HOME/CLI/bin"
+#set PATH $PATH $WEBOS_CLI_TV

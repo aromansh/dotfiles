@@ -18,7 +18,12 @@ Plug 'fladson/vim-kitty' -- Syntax highlight for kitty conf file
 Plug 'frazrepo/vim-rainbow' -- Rainbow brackets
 Plug 'ayu-theme/ayu-vim' -- Cool theme
 Plug ('neoclide/coc.nvim', { branch = 'release' })
-Plug ('akinsho/bufferline.nvim', { tag = 'v3.*' })
+--Plug ('akinsho/bufferline.nvim', { tag = 'v3.*' })
+Plug ('akinsho/bufferline.nvim')
+Plug 'github/copilot.vim'
+Plug 'giusgad/pets.nvim'
+	Plug 'giusgad/hologram.nvim'
+	Plug 'MunifTanjim/nui.nvim'
 vim.call('plug#end')
 
 require 'plugins.vim-airline'
@@ -31,3 +36,5 @@ require 'plugins.coc'
 require 'plugins.vim-rainbow'
 require 'plugins.ayu-vim'
 require 'plugins.bufferline'
+require 'plugins.copilot-vim'
+require 'plugins.pets-nvim'
