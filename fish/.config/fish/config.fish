@@ -3,8 +3,6 @@
 set -u nvm_default_version lts
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-
     # Disable greeting
     set fish_greeting
 
@@ -34,20 +32,15 @@ if status is-interactive
     alias gdc="git diff --cached"
     alias gp="git push"
     alias now='LC_TIME=de_DE.UTF-8 date "+%I:%M%p • %A %d %B"' # Output: 02:30PM • Donnerstag 10 Juli
+end
 
-    # fnm - Macbook pro
-    #set PATH "/Users/alejandro/Library/Application Support/fnm" $PATH
-    #fnm env | source
+# Load the current device configuration
+if test -e ~/.device.fish
+    source ~/.device.fish # sets $DEVICE_FISH_CONFIG_FILE
 
-    # fnm - OpenLoop
-    set PATH "/opt/homebrew/bin" $PATH
-    fnm env | source
+    set --local DEVICE_FISH_CONFIG_FILE_PATH ~/.config/fish/$DEVICE_FISH_CONFIG_FILE
 
-    # Haystack (commenting as instructed in https://webostv.developer.lge.com/develop/tools/removal-of-old-webos-tv-sdk)
-    #set LG_WEBOS_TV_SDK_HOME "/Users/alejandro/.bin/webos-cli"
-    #set WEBOS_CLI_TV "$LG_WEBOS_TV_SDK_HOME/CLI/bin"
-    #set PATH $PATH $WEBOS_CLI_TV
-
-    # Brew
-    set PATH $PATH /opt/homebrew/bin
+    if test -e $DEVICE_FISH_CONFIG_FILE_PATH
+	source $DEVICE_FISH_CONFIG_FILE_PATH
+    end
 end
