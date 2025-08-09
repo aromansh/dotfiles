@@ -7,7 +7,7 @@ function fish_right_prompt
     set -l orange (set_color -o ffa500)
     set -l purple (set_color -o b16286)
     set -l normal (set_color normal)
-    set -l time $cyan'('(echo -n (date +%H:%M))')'
+    set -l time $cyan'('(echo -n (now))')'
 
     echo -n -s  ' '$time' '
 end
