@@ -9,7 +9,7 @@ if status is-interactive
     # Vim FZF
     set -gx FZF_DEFAULT_OPTS '--reverse'
 
-    # Vim rg
+    # Ripgrep config (used by Neovim plugins as well)
     set -gx RIPGREP_CONFIG_PATH "$HOME/.dotfiles/ripgrep/ripgreprc"
 
     alias vim=nvim
