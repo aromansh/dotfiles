@@ -1,7 +1,6 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.local/share/nvim/plugged')
--- Plug 'scrooloose/nerdtree'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug ('nvim-tree/nvim-tree.lua', { commit = '9c97e6449b0b0269bd44e1fd4857184dfa57bb4c' })
 Plug ('junegunn/fzf', { ['do'] = function()
@@ -16,7 +15,6 @@ Plug 'fladson/vim-kitty' -- Syntax highlight for kitty conf file
 Plug 'frazrepo/vim-rainbow' -- Rainbow brackets
 Plug 'ayu-theme/ayu-vim' -- Cool theme
 Plug ('neoclide/coc.nvim', { branch = 'release' })
---Plug ('akinsho/bufferline.nvim', { tag = 'v3.*' })
 Plug ('akinsho/bufferline.nvim')
 Plug 'github/copilot.vim'
 Plug 'giusgad/pets.nvim'
@@ -25,7 +23,6 @@ Plug 'giusgad/pets.nvim'
 vim.call('plug#end')
 
 require 'plugins.vim-airline'
---require 'plugins.nerdtree'
 require 'plugins.nvim-tree'
 require 'plugins.fzf'
 require 'plugins.vim-gitgutter'
