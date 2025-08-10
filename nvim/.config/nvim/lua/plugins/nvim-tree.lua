@@ -15,6 +15,8 @@ require("nvim-tree").setup({
       custom_only = true,
       list = {
         --{ key = "u", action = "dir_up" },
+        { key = "s", action = "system_open" },
+        { key = "a", action = "create" },
         { key = "g", action = "edit" },
         { key = "o", action = "preview" },
         { key = "R", action = "refresh" },
