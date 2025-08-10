@@ -38,6 +38,9 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = false
   },
+  filesystem_watchers = {
+    ignore_dirs = { "node_modules", "cdk.out" }
+  },
   git = {
       ignore = false
   }
