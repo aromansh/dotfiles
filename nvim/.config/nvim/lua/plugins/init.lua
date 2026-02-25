@@ -33,3 +33,6 @@ require 'plugins.ayu-vim'
 require 'plugins.bufferline'
 require 'plugins.copilot-vim'
 require 'plugins.pets-nvim'
+
+-- @TODO https://blog.ffff.lt/posts/typescript-and-neovim-lsp-2024/
+-- @TODO https://github.com/famiu/feline.nvim

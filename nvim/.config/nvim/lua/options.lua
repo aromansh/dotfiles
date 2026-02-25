@@ -2,8 +2,8 @@
 local set = vim.opt
 
 set.number = true
-set.shiftwidth = 4
-set.tabstop = 4
+set.shiftwidth = 2
+-- set.tabstop = 4
 set.expandtab = true
 set.encoding = 'UTF-8'
 set.termguicolors = true
