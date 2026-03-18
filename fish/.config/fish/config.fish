@@ -35,12 +35,11 @@ if status is-interactive
 end
 
 # Load the current device configuration
-if test -e ~/.device.fish
-    source ~/.device.fish # sets $DEVICE_FISH_CONFIG_FILE
-
-    set --local DEVICE_FISH_CONFIG_FILE_PATH ~/.config/fish/$DEVICE_FISH_CONFIG_FILE
+if test -e ~/.device
+    set --local DEVICE (cat ~/.device | string trim)
+    set --local DEVICE_FISH_CONFIG_FILE_PATH ~/.config/fish/$DEVICE.fish
 
     if test -e $DEVICE_FISH_CONFIG_FILE_PATH
-	source $DEVICE_FISH_CONFIG_FILE_PATH
+        source $DEVICE_FISH_CONFIG_FILE_PATH
     end
 end
