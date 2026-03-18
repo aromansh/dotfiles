@@ -34,3 +34,7 @@ set -gx FZF_DEFAULT_OPTS '--reverse'
 
 # Vim rg
 set -gx RIPGREP_CONFIG_PATH "$HOME/.dotfiles/ripgrep/ripgreprc"
+
+# fnm
+set PATH "$HOME/.local/share/fnm" $PATH
+fnm env | source
