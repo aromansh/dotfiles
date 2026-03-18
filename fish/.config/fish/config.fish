@@ -43,3 +43,7 @@ if test -e ~/.device
         source $DEVICE_FISH_CONFIG_FILE_PATH
     end
 end
+
+# fnm
+set PATH "$HOME/.local/share/fnm" $PATH
+fnm env | source
