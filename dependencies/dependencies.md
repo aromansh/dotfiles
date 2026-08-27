@@ -18,3 +18,5 @@
 * jq
 * picom - for transparency in terminals
 * Cousine Nerd (nerd font)
+
+* texlive-basic texlive-latexrecommended texlive-latexextra texlive-fontsrecommended
